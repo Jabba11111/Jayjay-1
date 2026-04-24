@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grieks Restaurant Plato - Authentieke Griekse keuken in een warme, gastvrije sfeer. Ontdek traditionele gerechten, mezes en heerlijke wijnen.">
+    <title>Plato - Grieks Restaurant | Authentieke Griekse Keuken</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-mark">Π</span>
+                <span class="logo-text">Plato</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Over ons</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Sfeer</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reserve" class="nav-cta">Reserveren</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-kicker">Καλώς ήρθατε</span>
+            <h1 class="hero-title">Een stukje <em>Griekenland</em><br>bij u om de hoek</h1>
+            <p class="hero-subtitle">Authentieke Griekse keuken, familierecepten en een warm welkom — precies zoals het hoort.</p>
+            <div class="hero-actions">
+                <a href="#reserve" class="btn btn-primary">Reserveer een tafel</a>
+                <a href="#menu" class="btn btn-ghost">Bekijk het menu</a>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container about-grid">
+            <div class="about-visual">
+                <div class="about-image about-image-1"></div>
+                <div class="about-image about-image-2"></div>
+                <div class="about-badge">
+                    <span class="badge-year">Sinds</span>
+                    <span class="badge-number">1998</span>
+                </div>
+            </div>
+            <div class="about-text">
+                <span class="section-kicker">Ons verhaal</span>
+                <h2 class="section-title">De smaak van <em>filoxenia</em></h2>
+                <p class="lead">Filoxenia — Griekse gastvrijheid — is het hart van ons restaurant. Al meer dan twee decennia verwelkomen wij gasten aan onze tafel alsof het familie is.</p>
+                <p>Onze gerechten zijn geïnspireerd op het traditionele eten van het Griekse platteland. We werken met verse ingrediënten, olijfolie uit Kalamata, kruiden uit de bergen van Kreta en wijnen van kleine Griekse wijnhuizen. Elk bord vertelt een verhaal van zon, zee en familie.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Jaar ervaring</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Authentiek</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.8<small>★</small></span>
+                        <span class="stat-label">Gasten­waardering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-kicker">Onze kaart</span>
+                <h2 class="section-title">Menu &amp; <em>specialiteiten</em></h2>
+                <p class="section-intro">Een selectie van klassiekers en huisgemaakte specialiteiten. Vraag gerust naar de suggesties van de chef.</p>
+            </div>
+
+            <div class="menu-tabs" role="tablist">
+                <button class="tab active" data-tab="mezes" role="tab">Mezes</button>
+                <button class="tab" data-tab="hoofd" role="tab">Hoofdgerechten</button>
+                <button class="tab" data-tab="vis" role="tab">Vis &amp; zee</button>
+                <button class="tab" data-tab="dessert" role="tab">Dessert</button>
+                <button class="tab" data-tab="drinks" role="tab">Dranken</button>
+            </div>
+
+            <div class="menu-panels">
+                <div class="menu-panel active" data-panel="mezes">
+                    <div class="menu-grid">
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Tzatziki</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 6,50</span>
+                            </div>
+                            <p>Romige Griekse yoghurt, komkommer, knoflook en dille.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Melitzanosalata</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 7,00</span>
+                            </div>
+                            <p>Gegrilde aubergine met knoflook, citroen en olijfolie.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Saganaki</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 9,50</span>
+                            </div>
+                            <p>Gebakken kefalograviera kaas met honing en sesam.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Dolmadakia</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 8,00</span>
+                            </div>
+                            <p>Wijnbladeren gevuld met rijst, kruiden en pijnboompitten.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Horiatiki</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 11,50</span>
+                            </div>
+                            <p>Klassieke Griekse salade met feta, olijven en oregano.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Spanakopita</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 8,50</span>
+                            </div>
+                            <p>Filodeeg met spinazie, feta en verse kruiden.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="menu-panel" data-panel="hoofd">
+                    <div class="menu-grid">
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Souvlaki van de grill</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 21,50</span>
+                            </div>
+                            <p>Varkenshaasspiesen, pita, tzatziki en aardappelpartjes.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Moussaka</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 22,00</span>
+                            </div>
+                            <p>Ovenschotel van aubergine, rundergehakt en béchamel.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Lamskoteletten</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 28,50</span>
+                            </div>
+                            <p>Gegrild met rozemarijn, knoflook en citroen.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Kleftiko</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 26,00</span>
+                            </div>
+                            <p>Langzaam gegaard lamsvlees in perkament, uit de oven.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Gemista</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 18,50</span>
+                            </div>
+                            <p>Gevulde paprika's en tomaten met rijst en kruiden.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Bifteki Plato</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 23,00</span>
+                            </div>
+                            <p>Huisgemaakte burger gevuld met feta en kruiden.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="menu-panel" data-panel="vis">
+                    <div class="menu-grid">
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Gegrilde Dorade</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 27,50</span>
+                            </div>
+                            <p>Hele dorade van de grill met citroen en olijfolie.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Garides Saganaki</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 24,00</span>
+                            </div>
+                            <p>Gamba's in tomatensaus met feta en ouzo.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Oktapodi</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 16,50</span>
+                            </div>
+                            <p>Gegrilde octopus met rode wijnazijn en kappertjes.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Kalamari</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 14,00</span>
+                            </div>
+                            <p>Knapperig gefrituurde inktvisringen met aioli.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="menu-panel" data-panel="dessert">
+                    <div class="menu-grid">
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Baklava</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 7,50</span>
+                            </div>
+                            <p>Knapperig filodeeg met walnoten en bloemenhoning.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Galaktoboureko</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 7,50</span>
+                            </div>
+                            <p>Filo met vanille-griesmeelcrème en citroensiroop.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Griekse yoghurt</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 6,50</span>
+                            </div>
+                            <p>Met thijmhoning en gegrilde walnoten.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Loukoumades</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 7,00</span>
+                            </div>
+                            <p>Warme honingbolletjes met kaneel en sesam.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="menu-panel" data-panel="drinks">
+                    <div class="menu-grid">
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Ouzo Plomari</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 4,50</span>
+                            </div>
+                            <p>Klassieke Griekse anijsdrank, geserveerd met ijs.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Assyrtiko — fles</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 32,00</span>
+                            </div>
+                            <p>Mineralige witte wijn van het eiland Santorini.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Agiorgitiko — fles</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 29,50</span>
+                            </div>
+                            <p>Fruitige rode wijn uit Nemea, Peloponnesos.</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-head">
+                                <h3>Mythos bier</h3>
+                                <span class="dots"></span>
+                                <span class="price">€ 4,75</span>
+                            </div>
+                            <p>Griekse pils, fris en licht van smaak.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <div class="container">
+            <blockquote>
+                <p>"Η αρχή είναι το ήμισυ του παντός"</p>
+                <cite>Het begin is de helft van het geheel — <span>Plato</span></cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-kicker">Sfeer</span>
+                <h2 class="section-title">Proef de <em>Griekse zon</em></h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item g1"></div>
+                <div class="gallery-item g2"></div>
+                <div class="gallery-item g3"></div>
+                <div class="gallery-item g4"></div>
+                <div class="gallery-item g5"></div>
+                <div class="gallery-item g6"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reserve" id="reserve">
+        <div class="container reserve-grid">
+            <div class="reserve-intro">
+                <span class="section-kicker">Reserveren</span>
+                <h2 class="section-title">Kom <em>proeven</em></h2>
+                <p>Reserveer uw tafel online of bel ons direct. Voor grotere gezelschappen en feestelijke gelegenheden nemen wij graag contact met u op om de avond persoonlijk in te vullen.</p>
+                <ul class="reserve-info">
+                    <li><strong>Telefoon</strong><span>020 123 45 67</span></li>
+                    <li><strong>Email</strong><span>reserveren@plato.nl</span></li>
+                    <li><strong>Groepen</strong><span>Vanaf 8 personen op aanvraag</span></li>
+                </ul>
+            </div>
+            <form class="reserve-form" id="reserveForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Naam</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefoon</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Datum</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Tijd</label>
+                        <select id="time" name="time" required>
+                            <option value="">Kies een tijd</option>
+                            <option>17:30</option>
+                            <option>18:00</option>
+                            <option>18:30</option>
+                            <option>19:00</option>
+                            <option>19:30</option>
+                            <option>20:00</option>
+                            <option>20:30</option>
+                            <option>21:00</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Personen</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">—</option>
+                            <option>1</option><option>2</option><option>3</option><option>4</option>
+                            <option>5</option><option>6</option><option>7</option><option>8+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Opmerking (optioneel)</label>
+                    <textarea id="message" name="message" rows="3" placeholder="Allergieën, bijzondere gelegenheid..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Reservering versturen</button>
+                <p class="form-note">U ontvangt binnen 24 uur een bevestiging per e-mail.</p>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-block">
+                <h3>Adres</h3>
+                <p>Olympusplein 12<br>1076 AB Amsterdam</p>
+            </div>
+            <div class="contact-block">
+                <h3>Openingstijden</h3>
+                <ul>
+                    <li><span>Maandag</span><span>Gesloten</span></li>
+                    <li><span>Di — Do</span><span>17:00 — 22:30</span></li>
+                    <li><span>Vr — Za</span><span>17:00 — 23:30</span></li>
+                    <li><span>Zondag</span><span>16:00 — 22:00</span></li>
+                </ul>
+            </div>
+            <div class="contact-block">
+                <h3>Volg ons</h3>
+                <div class="socials">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="TripAdvisor">TripAdvisor</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo-mark">Π</span>
+                <span class="logo-text">Plato</span>
+            </div>
+            <p class="footer-text">Grieks Restaurant Plato — Authentieke keuken &amp; warme gastvrijheid sinds 1998.</p>
+            <p class="footer-copy">© <span id="year"></span> Restaurant Plato. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">Bedankt! Uw reservering is verstuurd.</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
