@@ -60,23 +60,23 @@ window.addEventListener('scroll', () => {
 // null = closed. Times in 24h HH:MM, last slot is last seating
 // (we stop 60 min before actual closing so guests can enjoy their dinner).
 const OPENING_HOURS = {
-    0: { open: '17:00', lastSeating: '21:30' }, // Zondag
+    0: { open: '17:00', lastSeating: '22:00' }, // Zondag
     1: null,                                     // Maandag gesloten
-    2: { open: '17:00', lastSeating: '21:30' }, // Dinsdag
-    3: { open: '17:00', lastSeating: '21:30' }, // Woensdag
-    4: { open: '17:00', lastSeating: '21:30' }, // Donderdag
-    5: { open: '17:00', lastSeating: '21:30' }, // Vrijdag
-    6: { open: '17:00', lastSeating: '21:30' }, // Zaterdag
+    2: { open: '17:00', lastSeating: '22:00' }, // Dinsdag
+    3: { open: '17:00', lastSeating: '22:00' }, // Woensdag
+    4: { open: '17:00', lastSeating: '22:00' }, // Donderdag
+    5: { open: '17:00', lastSeating: '22:00' }, // Vrijdag
+    6: { open: '17:00', lastSeating: '22:00' }, // Zaterdag
 };
 
 const WEEKDAYS_NL = ['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];
 const MONTHS_NL = ['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'];
 
 const RESTAURANT = {
-    name: 'Restaurant Plato',
-    email: 'reserveren@plato.nl',
-    phone: '020 123 45 67',
-    address: 'Olympusplein 12, 1076 AB Amsterdam',
+    name: 'Grieks Restaurant Plato',
+    email: 'platodtg@gmail.com',
+    phone: '020 - 613 39 33',
+    address: 'Confuciusplein 14, 1064 LG Amsterdam',
 };
 
 const STORAGE_KEY = 'plato_reservations';
@@ -178,7 +178,7 @@ function updateTimeSlots() {
     });
 
     dateHint.textContent = availableCount
-        ? `Geopend tot 22:30 — laatste zitplaats om ${hours.lastSeating}.`
+        ? `Geopend tot 23:00 — laatste zitplaats om ${hours.lastSeating}.`
         : 'Geen plek meer voor vandaag — kies een andere datum.';
 }
 dateInput.addEventListener('change', updateTimeSlots);
