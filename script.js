@@ -60,13 +60,13 @@ window.addEventListener('scroll', () => {
 // null = closed. Times in 24h HH:MM, last slot is last seating
 // (we stop 60 min before actual closing so guests can enjoy their dinner).
 const OPENING_HOURS = {
-    0: { open: '16:00', lastSeating: '21:00' }, // Zondag 16:00 — 22:00
+    0: { open: '17:00', lastSeating: '21:30' }, // Zondag
     1: null,                                     // Maandag gesloten
     2: { open: '17:00', lastSeating: '21:30' }, // Dinsdag
     3: { open: '17:00', lastSeating: '21:30' }, // Woensdag
     4: { open: '17:00', lastSeating: '21:30' }, // Donderdag
-    5: { open: '17:00', lastSeating: '22:30' }, // Vrijdag 17:00 — 23:30
-    6: { open: '17:00', lastSeating: '22:30' }, // Zaterdag
+    5: { open: '17:00', lastSeating: '21:30' }, // Vrijdag
+    6: { open: '17:00', lastSeating: '21:30' }, // Zaterdag
 };
 
 const WEEKDAYS_NL = ['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];
@@ -178,7 +178,7 @@ function updateTimeSlots() {
     });
 
     dateHint.textContent = availableCount
-        ? `Geopend van ${hours.open} tot ${hours.lastSeating} (laatste zitplaats).`
+        ? `Geopend tot 22:30 — laatste zitplaats om ${hours.lastSeating}.`
         : 'Geen plek meer voor vandaag — kies een andere datum.';
 }
 dateInput.addEventListener('change', updateTimeSlots);
