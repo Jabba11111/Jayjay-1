@@ -32,7 +32,9 @@
     </nav>
 
     <section class="hero" id="home">
-        <div class="hero-bg"></div>
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=1800&auto=format&fit=crop&q=80" alt="" aria-hidden="true">
+        </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <span class="hero-kicker">Καλώς ήρθατε</span>
@@ -42,6 +44,7 @@
                 <a href="#reserve" class="btn btn-primary">Reserveer een tafel</a>
                 <a href="#menu" class="btn btn-ghost">Bekijk het menu</a>
             </div>
+            <div class="hero-meander" aria-hidden="true"></div>
             <div class="hero-scroll">
                 <span>Scroll</span>
                 <div class="scroll-line"></div>
@@ -52,15 +55,25 @@
     <section class="about" id="about">
         <div class="container about-grid">
             <div class="about-visual">
-                <div class="about-image about-image-1"></div>
-                <div class="about-image about-image-2"></div>
+                <div class="about-image about-image-1">
+                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=900&auto=format&fit=crop&q=80" alt="Mezze tafel met Griekse gerechten" loading="lazy">
+                </div>
+                <div class="about-image about-image-2">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&auto=format&fit=crop&q=80" alt="Vlees van de Griekse grill" loading="lazy">
+                </div>
                 <div class="about-badge">
-                    <span class="badge-year">Sinds</span>
-                    <span class="badge-number">1998</span>
+                    <span class="badge-year">Familie­bedrijf</span>
+                    <span class="badge-number">Π</span>
                 </div>
             </div>
             <div class="about-text">
                 <span class="section-kicker">Ons verhaal</span>
+                <div class="ornament" aria-hidden="true">
+                    <svg viewBox="0 0 80 16" width="80" height="16">
+                        <path d="M2 8 Q 12 0 22 8 T 42 8 T 62 8 T 78 8" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+                        <circle cx="40" cy="8" r="2" fill="currentColor"/>
+                    </svg>
+                </div>
                 <h2 class="section-title">Een verborgen <em>pareltje</em><br>in Nieuw-West</h2>
                 <p class="lead">Plato is een familiebedrijf met een warm hart en een blauw-witte ziel. Door locals geliefd, door bezoekers ontdekt — een plek waar Griekse gastvrijheid (<em>filoxenia</em>) thuis is.</p>
                 <p>Onze gerechten zijn geïnspireerd op het traditionele eten van het Griekse platteland. We werken met verse ingrediënten, olijfolie, kruiden van eigen bodem en kleine Griekse wijnhuizen. Op de 1<sup>e</sup> en 3<sup>e</sup> zaterdag van de maand klinkt er live muziek in de zaal — kom proeven, dansen en delen alsof u in Athene aan tafel zit.</p>
@@ -229,6 +242,17 @@
     <section class="quote">
         <div class="container">
             <blockquote>
+                <svg class="olive" viewBox="0 0 120 24" width="120" height="24" aria-hidden="true">
+                    <path d="M2 12 H 50" stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round"/>
+                    <ellipse cx="14" cy="9" rx="6" ry="2.5" transform="rotate(-25 14 9)" fill="currentColor"/>
+                    <ellipse cx="26" cy="15" rx="6" ry="2.5" transform="rotate(20 26 15)" fill="currentColor"/>
+                    <ellipse cx="38" cy="9" rx="6" ry="2.5" transform="rotate(-25 38 9)" fill="currentColor"/>
+                    <circle cx="60" cy="12" r="2" fill="currentColor"/>
+                    <path d="M70 12 H 118" stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round"/>
+                    <ellipse cx="106" cy="9" rx="6" ry="2.5" transform="rotate(25 106 9)" fill="currentColor"/>
+                    <ellipse cx="94" cy="15" rx="6" ry="2.5" transform="rotate(-20 94 15)" fill="currentColor"/>
+                    <ellipse cx="82" cy="9" rx="6" ry="2.5" transform="rotate(25 82 9)" fill="currentColor"/>
+                </svg>
                 <p>"Η αρχή είναι το ήμισυ του παντός"</p>
                 <cite>Het begin is de helft van het geheel — <span>Plato</span></cite>
             </blockquote>
@@ -242,12 +266,30 @@
                 <h2 class="section-title">Proef de <em>Griekse zon</em></h2>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item g1"></div>
-                <div class="gallery-item g2"></div>
-                <div class="gallery-item g3"></div>
-                <div class="gallery-item g4"></div>
-                <div class="gallery-item g5"></div>
-                <div class="gallery-item g6"></div>
+                <figure class="gallery-item g1">
+                    <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=900&auto=format&fit=crop&q=80" alt="Witte huizen en blauwe koepels op Santorini" loading="lazy">
+                    <figcaption>Santorini</figcaption>
+                </figure>
+                <figure class="gallery-item g2">
+                    <img src="https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=800&auto=format&fit=crop&q=80" alt="Klassieke Griekse boerensalade met feta en olijven" loading="lazy">
+                    <figcaption>Choriatiki</figcaption>
+                </figure>
+                <figure class="gallery-item g3">
+                    <img src="https://images.unsplash.com/photo-1604152135912-04a022e23696?w=800&auto=format&fit=crop&q=80" alt="Souvlakispiezen van de grill" loading="lazy">
+                    <figcaption>Van de grill</figcaption>
+                </figure>
+                <figure class="gallery-item g4">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&auto=format&fit=crop&q=80" alt="Sfeervol Mediterraan terras met witte tafels" loading="lazy">
+                    <figcaption>Bij ons aan tafel</figcaption>
+                </figure>
+                <figure class="gallery-item g5">
+                    <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=800&auto=format&fit=crop&q=80" alt="Olijven en olijfolie" loading="lazy">
+                    <figcaption>Met olijfolie van eigen bodem</figcaption>
+                </figure>
+                <figure class="gallery-item g6">
+                    <img src="https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?w=800&auto=format&fit=crop&q=80" alt="Glazen ouzo met ijs" loading="lazy">
+                    <figcaption>Yamas! · Ouzo</figcaption>
+                </figure>
             </div>
         </div>
     </section>
